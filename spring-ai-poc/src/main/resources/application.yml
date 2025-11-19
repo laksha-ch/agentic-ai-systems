@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: spring-ai-poc
+  ai:
+    chat:
+      client:
+        enabled: false
+    openai:
+      api-key: ${OPENAI_API_KEY}
+    ollama:
+      chat:
+        options:
+          model: gemma3:4b
+logging:
+  level:
+    org:
+      springframework:
+        ai:
+          chat:
+            client:
+              advisor: DEBUG
